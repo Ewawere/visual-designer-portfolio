@@ -72,8 +72,34 @@ h2 {
   margin-bottom: 18px;
 }
 
-.about strong {
+/* Tools Section */
+.tools {
+  background: white;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tool-card {
+  background: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.tool-card h3 {
+  font-size: 1.15rem;
   font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.tool-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
 }
 
 /* Work Grid */
@@ -141,7 +167,7 @@ h2 {
 
 /* Approach */
 .approach {
-  background: white;
+  background: #f8f8f8;
 }
 
 .approach-grid {
