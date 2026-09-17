@@ -88,6 +88,17 @@ h2 {
   border: 1px solid #eee;
   border-radius: 12px;
   padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.tool-card:hover {
+  border-color: #ccc;
+  background: #f0f0f0;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
 }
 
 .tool-card h3 {
@@ -115,6 +126,7 @@ h2 {
   overflow: hidden;
   box-shadow: 0 4px 24px rgba(0,0,0,0.05);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  scroll-margin-top: 40px;
 }
 
 .card:hover {
@@ -133,6 +145,19 @@ h2 {
 
 .card-content {
   padding: 22px;
+}
+
+.tool-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #666;
+  background: #f0f0f0;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin-bottom: 10px;
 }
 
 .card h3 {
