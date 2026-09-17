@@ -5,68 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Work | Visual Designer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="top-nav">
-    <div class="container">
-      <a href="index.html" class="back">← Back to Portfolio</a>
+    <div class="container nav-flex">
+      <a href="index.html" class="back">← Portfolio</a>
+      <span class="nav-label">Frontend</span>
     </div>
   </nav>
 
   <header class="page-header">
     <div class="container">
-      <p class="label">Tool</p>
+      <p class="label">Selected Work</p>
       <h1>Frontend</h1>
-      <p class="tagline">HTML • CSS • Simple Web Layouts</p>
+      <p class="tagline">HTML • CSS • Clean Web Layouts</p>
     </div>
   </header>
 
   <section class="work">
     <div class="container">
-      <h2>Work involving Frontend</h2>
-      <p class="section-desc">Clean layouts and basic implementation of designs</p>
+      <div class="work-intro">
+        <h2>Web Implementation</h2>
+        <p>Turning visual designs into structured, responsive pages with attention to hierarchy and detail.</p>
+      </div>
 
-      <div class="grid">
-        <div class="card">
-          <div class="card-image one">
-            <span class="card-label">This Site</span>
+      <div class="project-list">
+        <article class="project">
+          <div class="project-visual soft">
+            <div class="project-overlay">
+              <span>01</span>
+              <h3>This Portfolio</h3>
+            </div>
           </div>
-          <div class="card-content">
+          <div class="project-meta">
+            <span class="project-tag">Live Site</span>
             <h3>Portfolio Website</h3>
-            <p>This portfolio itself — built with clean HTML & CSS, responsive layout, and intentional visual hierarchy.</p>
+            <p>This site itself — built with clean HTML & CSS, responsive layout, and intentional visual hierarchy.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <div class="card-image two">
-            <span class="card-label">Layout</span>
+        <article class="project">
+          <div class="project-visual clean">
+            <div class="project-overlay dark">
+              <span>02</span>
+              <h3>Landing Structure</h3>
+            </div>
           </div>
-          <div class="card-content">
-            <h3>Landing Page Structure</h3>
-            <p>Simple, clear section-based layouts designed for readability and conversion.</p>
+          <div class="project-meta">
+            <span class="project-tag">Layout</span>
+            <h3>Section-Based Pages</h3>
+            <p>Simple, clear section layouts designed for readability and conversion.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <div class="card-image three">
-            <span class="card-label">Responsive</span>
+        <article class="project">
+          <div class="project-visual warm">
+            <div class="project-overlay">
+              <span>03</span>
+              <h3>Responsive</h3>
+            </div>
           </div>
-          <div class="card-content">
-            <h3>Mobile-First Approach</h3>
+          <div class="project-meta">
+            <span class="project-tag">Mobile-First</span>
+            <h3>Adaptive Layouts</h3>
             <p>Layouts that adapt cleanly across desktop and mobile with consistent spacing and hierarchy.</p>
           </div>
-        </div>
+        </article>
 
-        <div class="card">
-          <div class="card-image four">
-            <span class="card-label">UI</span>
+        <article class="project">
+          <div class="project-visual lifestyle">
+            <div class="project-overlay">
+              <span>04</span>
+              <h3>UI Build</h3>
+            </div>
           </div>
-          <div class="card-content">
-            <h3>UI Implementation</h3>
-            <p>Turning visual designs into structured, usable web pages with attention to detail.</p>
+          <div class="project-meta">
+            <span class="project-tag">Implementation</span>
+            <h3>Design to Code</h3>
+            <p>Translating visual designs into structured, usable web pages with attention to detail.</p>
           </div>
-        </div>
+        </article>
       </div>
     </div>
   </section>
@@ -74,7 +93,7 @@
   <footer>
     <div class="container">
       <p class="footer-title">Basic frontend to bring designs to life</p>
-      <p class="footer-sub"><a href="index.html" style="color:inherit;opacity:0.7">← Back to Portfolio</a></p>
+      <p class="footer-sub"><a href="index.html">← Back to Portfolio</a></p>
     </div>
   </footer>
 </body>
