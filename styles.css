@@ -89,7 +89,7 @@ h2 {
 
 .section-desc {
   color: #777;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   font-size: 1.02rem;
 }
 
@@ -169,65 +169,92 @@ h2 {
   line-height: 1.5;
 }
 
-/* Work Grid */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 28px;
-}
-
-.card {
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.04);
-  transition: all 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
-}
-
-.card-image {
-  height: 200px;
-  position: relative;
+/* Showcase */
+.showcase {
   display: flex;
-  align-items: flex-end;
-  padding: 20px;
+  flex-direction: column;
+  gap: 60px;
 }
 
-.one { background: linear-gradient(145deg, #1e1b4b 0%, #4338ca 100%); }
-.two { background: linear-gradient(145deg, #064e3b 0%, #059669 100%); }
-.three { background: linear-gradient(145deg, #1e3a5f 0%, #2563eb 100%); }
-.four { background: linear-gradient(145deg, #4a1942 0%, #a21caf 100%); }
+.showcase-item {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
 
-.card-label {
-  font-size: 0.72rem;
+.showcase-item.reverse {
+  direction: rtl;
+}
+
+.showcase-item.reverse > * {
+  direction: ltr;
+}
+
+.showcase-visual {
+  height: 380px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.soft { background: linear-gradient(145deg, #f5e6d3, #e8d5b7); }
+.clean { background: linear-gradient(145deg, #f8f8f8, #e5e5e5); }
+.warm { background: linear-gradient(145deg, #f0e6d8, #d4c4a8); }
+.lifestyle { background: linear-gradient(145deg, #e8d5c4, #c9b8a0); }
+
+.visual-content {
+  text-align: center;
+  padding: 30px;
+}
+
+.visual-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #3d2b1f;
+}
+
+.visual-content p {
+  font-size: 1rem;
+  color: #6b5b4f;
+}
+
+.visual-content.dark h3 {
+  color: #111;
+}
+
+.visual-content.dark p {
+  color: #555;
+}
+
+.showcase-info .tag {
+  display: inline-block;
+  font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: white;
-  background: rgba(0,0,0,0.25);
-  backdrop-filter: blur(6px);
-  padding: 6px 12px;
+  letter-spacing: 0.06em;
+  color: #666;
+  background: #f0f0f0;
+  padding: 5px 12px;
   border-radius: 50px;
+  margin-bottom: 14px;
 }
 
-.card-content {
-  padding: 26px;
-}
-
-.card h3 {
-  font-size: 1.2rem;
+.showcase-info h3 {
+  font-size: 1.4rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.card p {
-  font-size: 0.95rem;
+.showcase-info p {
+  font-size: 1.02rem;
   color: #555;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 /* Skills */
@@ -296,7 +323,15 @@ footer {
   opacity: 0.45;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
+  .showcase-item,
+  .showcase-item.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+  .showcase-visual {
+    height: 280px;
+  }
   header h1, .page-header h1 {
     font-size: 2.3rem;
   }
