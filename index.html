@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visual Designer Portfolio | Marketing & Brand</title>
+  <title>Visual Designer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -17,7 +17,7 @@
   </header>
 
   <section class="about">
-    <div class="container">
+    <div class="container narrow">
       <h2>About</h2>
       <p>
         I design marketing and brand visuals that help companies look consistent and convert better. 
@@ -36,20 +36,24 @@
       <p class="section-desc">Click any tool to see related work</p>
       <div class="tools-grid">
         <a href="#figma-work" class="tool-card">
+          <span class="tool-number">01</span>
           <h3>Figma</h3>
-          <p>Main design tool for layouts, social graphics, web assets, and brand systems.</p>
+          <p>Layouts, social graphics, web assets, and brand systems.</p>
         </a>
         <a href="#ai-work" class="tool-card">
+          <span class="tool-number">02</span>
           <h3>Generative AI</h3>
-          <p>Used for product imagery, concepting, and speeding up creative production.</p>
+          <p>Product imagery, concepting, and faster creative production.</p>
         </a>
         <a href="#photoshop-work" class="tool-card">
+          <span class="tool-number">03</span>
           <h3>Photoshop</h3>
-          <p>Image editing, retouching, and preparing final visual assets.</p>
+          <p>Image editing, retouching, and final asset preparation.</p>
         </a>
         <a href="#frontend-work" class="tool-card">
-          <h3>Frontend Basics</h3>
-          <p>Basic HTML & CSS for simple web layouts and implementing designs.</p>
+          <span class="tool-number">04</span>
+          <h3>Frontend</h3>
+          <p>Basic HTML & CSS for clean web layouts.</p>
         </a>
       </div>
     </div>
@@ -58,46 +62,46 @@
   <section class="work">
     <div class="container">
       <h2>Selected Work</h2>
-      <p class="section-desc">Examples of marketing and brand-focused design work</p>
+      <p class="section-desc">Marketing and brand-focused design examples</p>
       
       <div class="grid">
-        <!-- Figma Work -->
         <div class="card" id="figma-work">
-          <div class="card-image one"></div>
+          <div class="card-image one">
+            <span class="card-label">Figma</span>
+          </div>
           <div class="card-content">
-            <span class="tool-tag">Figma</span>
             <h3>Social & Ad Creatives</h3>
-            <p>Designed in Figma — conversion-focused graphics and paid social ads with clear hierarchy and strong visual storytelling.</p>
+            <p>Conversion-focused graphics with clear hierarchy and strong visual storytelling.</p>
           </div>
         </div>
 
-        <!-- AI Work -->
         <div class="card" id="ai-work">
-          <div class="card-image two"></div>
+          <div class="card-image two">
+            <span class="card-label">AI</span>
+          </div>
           <div class="card-content">
-            <span class="tool-tag">Generative AI</span>
             <h3>AI Product Imagery</h3>
-            <p>Product and lifestyle visuals generated with AI, then refined for commercial ad use and brand consistency.</p>
+            <p>Product and lifestyle visuals generated with AI, refined for commercial use.</p>
           </div>
         </div>
 
-        <!-- Photoshop Work -->
         <div class="card" id="photoshop-work">
-          <div class="card-image three"></div>
+          <div class="card-image three">
+            <span class="card-label">Photoshop</span>
+          </div>
           <div class="card-content">
-            <span class="tool-tag">Photoshop</span>
-            <h3>Image Editing & Retouching</h3>
-            <p>Final polishing, background cleanup, color correction, and asset preparation for ads and web use.</p>
+            <h3>Image Editing</h3>
+            <p>Retouching, color correction, and preparing polished final assets.</p>
           </div>
         </div>
 
-        <!-- Frontend Work -->
         <div class="card" id="frontend-work">
-          <div class="card-image four"></div>
+          <div class="card-image four">
+            <span class="card-label">HTML / CSS</span>
+          </div>
           <div class="card-content">
-            <span class="tool-tag">HTML / CSS</span>
             <h3>Web Layouts</h3>
-            <p>Simple frontend implementation of designs — clean layouts and responsive structure using HTML & CSS.</p>
+            <p>Clean, responsive structure and simple frontend implementation.</p>
           </div>
         </div>
       </div>
@@ -112,12 +116,12 @@
         <div class="skill">Typography</div>
         <div class="skill">Visual Storytelling</div>
         <div class="skill">Brand Systems</div>
-        <div class="skill">Social Media Design</div>
+        <div class="skill">Social Design</div>
         <div class="skill">Ad Creatives</div>
         <div class="skill">Email Design</div>
         <div class="skill">Web Graphics</div>
-        <div class="skill">AI Design Tools</div>
-        <div class="skill">Layout & Hierarchy</div>
+        <div class="skill">AI Tools</div>
+        <div class="skill">Layout</div>
       </div>
     </div>
   </section>
@@ -126,17 +130,17 @@
     <div class="container">
       <h2>How I Work</h2>
       <div class="approach-grid">
-        <div>
+        <div class="approach-item">
           <h3>Fast & Flexible</h3>
-          <p>Comfortable in less structured, fast-moving startup environments. I prioritize quickly and deliver clean work on time.</p>
+          <p>Comfortable in fast-moving startup environments. I prioritize quickly and deliver clean work on time.</p>
         </div>
-        <div>
+        <div class="approach-item">
           <h3>Feedback-Driven</h3>
-          <p>I take direction well, iterate fast, and refine designs based on team input and performance needs.</p>
+          <p>I take direction well, iterate fast, and refine designs based on team input.</p>
         </div>
-        <div>
+        <div class="approach-item">
           <h3>AI + Craft</h3>
-          <p>I use AI tools to accelerate concepting while maintaining strong design fundamentals and brand consistency.</p>
+          <p>I use AI to accelerate concepting while keeping strong design fundamentals.</p>
         </div>
       </div>
     </div>
