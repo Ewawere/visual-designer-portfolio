@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Visual Designer Portfolio</title>
+  <title>Home | Visual Designer Portfolio</title>
   <meta name="description" content="Visual designer specializing in marketing & brand design, social, ads, email and visual identity.">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
@@ -15,68 +15,33 @@
     <div class="container nav-flex">
       <a href="index.html" class="nav-brand">Visual Designer</a>
       <div class="nav-links">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </nav>
 
-  <!-- Home / Hero -->
+  <!-- Home Hero -->
   <header class="hero">
     <div class="container">
       <p class="label">Visual Designer</p>
       <h1>Marketing & Brand Design</h1>
       <p class="tagline">I create clean, conversion-focused visuals for brands — from social and ads to email and visual identity.</p>
       <div class="hero-buttons">
-        <a href="#work" class="btn btn-primary">View Work</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        <a href="work.html" class="btn btn-primary">View Work</a>
+        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
       </div>
     </div>
   </header>
 
-  <!-- About -->
-  <section class="about" id="about">
-    <div class="container about-grid">
-      <div class="about-content">
-        <p class="section-label">About</p>
-        <h2>Design that looks good and works hard</h2>
-        <p>
-          I design marketing and brand visuals that help companies look consistent and convert better. 
-          My work covers social posts, ad creatives, email campaigns, website graphics, and brand systems — 
-          with a strong focus on typography, visual storytelling, and clean layout.
-        </p>
-        <p>
-          I work fast, take feedback well, and combine AI tools with solid design fundamentals to deliver polished results.
-        </p>
-      </div>
-      <div class="about-details">
-        <div class="detail-item">
-          <span class="detail-label">Focus</span>
-          <span class="detail-value">Marketing & Brand Design</span>
-        </div>
-        <div class="detail-item">
-          <span class="detail-label">Specialties</span>
-          <span class="detail-value">Social, Ads, Email, Visual Identity</span>
-        </div>
-        <div class="detail-item">
-          <span class="detail-label">Tools</span>
-          <span class="detail-value">Figma, Generative AI, HTML/CSS</span>
-        </div>
-        <div class="detail-item">
-          <span class="detail-label">Availability</span>
-          <span class="detail-value">Open to remote roles</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Selected Work -->
-  <section class="gallery" id="work">
+  <!-- Featured Work Preview -->
+  <section class="gallery">
     <div class="container">
-      <p class="section-label">Selected Work</p>
-      <h2>Recent projects</h2>
-      <p class="section-desc">A selection of design pieces for marketing and brand projects</p>
+      <p class="section-label">Featured</p>
+      <h2>Selected Work</h2>
+      <p class="section-desc">A quick look at recent design pieces</p>
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="images/IMG_1907.jpeg" alt="Design work" loading="lazy">
@@ -90,106 +55,23 @@
         <div class="gallery-item">
           <img src="images/IMG_1911.jpeg" alt="Design work" loading="lazy">
         </div>
-        <div class="gallery-item">
-          <img src="images/Instagram%20Post%20-%20Midnight.png" alt="Instagram Post - Midnight" loading="lazy">
-        </div>
-        <div class="gallery-item">
-          <img src="images/Professional%20Male%20Songwriter%20Portrait.png" alt="Professional Male Songwriter Portrait" loading="lazy">
-        </div>
+      </div>
+      <div style="text-align:center; margin-top: 48px;">
+        <a href="work.html" class="btn btn-primary" style="background:#0a0a0a; color:white;">See All Work →</a>
       </div>
     </div>
   </section>
 
-  <!-- Tools -->
-  <section class="tools" id="tools">
-    <div class="container">
-      <p class="section-label">Tools</p>
-      <h2>Core Tools</h2>
-      <p class="section-desc">Click any tool to explore related work</p>
-      <div class="tools-grid three">
-        <a href="figma.html" class="tool-card">
-          <span class="tool-number">01</span>
-          <h3>Figma</h3>
-          <p>Layouts, social graphics, web assets, and brand systems.</p>
-          <span class="arrow">→</span>
-        </a>
-        <a href="ai.html" class="tool-card">
-          <span class="tool-number">02</span>
-          <h3>Generative AI</h3>
-          <p>Product imagery, concepting, and commercial creatives.</p>
-          <span class="arrow">→</span>
-        </a>
-        <a href="frontend.html" class="tool-card">
-          <span class="tool-number">03</span>
-          <h3>Frontend</h3>
-          <p>HTML & CSS for clean, responsive web layouts.</p>
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills">
-    <div class="container">
-      <p class="section-label">Skills</p>
-      <h2>What I bring</h2>
-      <div class="skills-grid">
-        <div class="skill">Figma</div>
-        <div class="skill">Typography</div>
-        <div class="skill">Visual Storytelling</div>
-        <div class="skill">Brand Systems</div>
-        <div class="skill">Social Design</div>
-        <div class="skill">Ad Creatives</div>
-        <div class="skill">Email Design</div>
-        <div class="skill">Web Graphics</div>
-        <div class="skill">AI Tools</div>
-        <div class="skill">Layout</div>
-        <div class="skill">Motion Graphics</div>
-        <div class="skill">Presentation Design</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- How I Work -->
-  <section class="approach">
-    <div class="container">
-      <p class="section-label">Approach</p>
-      <h2>How I work</h2>
-      <div class="approach-grid">
-        <div class="approach-item">
-          <h3>Fast & Flexible</h3>
-          <p>Comfortable in fast-moving environments. I prioritise quickly and deliver clean, production-ready work on time.</p>
-        </div>
-        <div class="approach-item">
-          <h3>Feedback-Driven</h3>
-          <p>I take direction well, iterate fast, and refine designs based on clear team and stakeholder input.</p>
-        </div>
-        <div class="approach-item">
-          <h3>AI + Craft</h3>
-          <p>I use AI to accelerate concepting while keeping strong design fundamentals and brand consistency.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <div class="container contact-inner">
-      <p class="section-label">Contact</p>
-      <h2>Let’s work together</h2>
-      <p class="contact-text">Open to remote Visual Designer roles in marketing, brand, social, email and web.</p>
-      
-      <div class="contact-cards">
-        <a href="mailto:praiseoghenewakpor@gmail.com" class="contact-card">
-          <span class="contact-label">Email</span>
-          <span class="contact-value">praiseoghenewakpor@gmail.com</span>
-        </a>
-        <a href="tel:+2349065779989" class="contact-card">
-          <span class="contact-label">Phone</span>
-          <span class="contact-value">09065779989</span>
-        </a>
-      </div>
+  <!-- Quick About -->
+  <section class="about">
+    <div class="container narrow" style="text-align:center;">
+      <p class="section-label">About</p>
+      <h2>Design that looks good and works hard</h2>
+      <p style="font-size:1.15rem; color:#444; margin-bottom:32px;">
+        I design marketing and brand visuals that help companies look consistent and convert better. 
+        Focused on social, ads, email, and visual identity.
+      </p>
+      <a href="about.html" class="btn btn-primary" style="background:#0a0a0a; color:white;">More About Me →</a>
     </div>
   </section>
 
